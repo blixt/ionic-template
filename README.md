@@ -14,7 +14,7 @@ You'll need these things before you start:
 
 * Node.js: http://nodejs.org/
 * Ionic, Cordova, and Gulp: `npm install -g cordova gulp ionic`
-* The `convert` command (provided by [ImageMagick][im])
+* (Optional) The `convert` command (provided by [ImageMagick][im])
 
 ### How to run your first mobile app
 
