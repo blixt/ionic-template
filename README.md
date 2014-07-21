@@ -8,24 +8,26 @@ without mucking about.
 Quickstart
 ----------
 
-Start by installing all dependencies:
-
-```sh
-npm install
-```
-
-If you haven't used Ionic, Cordova, or Gulp before, install them globally:
+If you haven't used Ionic, Cordova, or Gulp before, start by install them
+globally:
 
 ```sh
 npm install -g cordova gulp ionic
 ```
 
+Before you can run the project, you need to install all the dependencies
+of the project:
+
+```sh
+npm install
+```
+
 At this time, it might be a good idea to look at the `"ionic"` key in the
 `package.json` file. There are configurations for what Cordova plugins to
 install and how to resize the app icon to all the different sizes for the
-mobile app.
+mobile app. The defaults should work for now.
 
-After that you can just run the normal Ionic commands:
+To test the app you can just run the normal Ionic commands:
 
 ```sh
 ionic platform add ios
@@ -33,7 +35,7 @@ ionic emulate ios
 ```
 
 As you work on the app, you'll want to put styles in `scss/ionic.app.scss`
-and then run `gulp watch` to update the CSS as you make changes.
+and keep `gulp watch` running to update the CSS as you make changes.
 
 
 What is different?
