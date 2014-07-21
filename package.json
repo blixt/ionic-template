@@ -1,0 +1,53 @@
+{
+  "name": "example",
+  "version": "0.1.0",
+  "description": "",
+  "ionic": {
+    "plugins": [
+      "https://github.com/driftyco/ionic-plugins-keyboard.git",
+      "org.apache.cordova.console",
+      "org.apache.cordova.device",
+      "org.apache.cordova.statusbar"
+    ],
+    "resize": {
+      "android-icon": {
+        "source": "resources/icon.png",
+        "targetBasePath": "platforms/android/res",
+        "sizes": {
+          "36x36": "drawable-hdpi/icon.png",
+          "48x48": ["drawable/icon.png", "drawable-mdpi/icon.png"],
+          "72x72": "drawable-hdpi/icon.png",
+          "96x96": "drawable-xhdpi/icon.png",
+          "144x144": "drawable-xxhdpi/icon.png",
+          "192x192": "drawable-xxxhdpi/icon.png"
+        }
+      },
+      "ios-icon": {
+        "source": "resources/icon.png",
+        "targetBasePath": "platforms/ios/Example/Resources/icons",
+        "sizes": {
+          "29x29": "Icon-Small.png",
+          "40x40": "Icon-Small-40@2x.png",
+          "58x58": "Icon-Small@2x.png",
+          "60x60": "Icon-60.png",
+          "76x76": "Icon-76.png",
+          "80x80": "Icon-Small-40@2x.png",
+          "120x120": "Icon-60@2x.png",
+          "152x152": "Icon-76@2x.png",
+          "512x512": "iTunesArtwork.png",
+          "1024x1024": "iTunesArtwork@2x.png"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "postinstall": "bower install && gulp sass"
+  },
+  "devDependencies": {
+    "bower": "^1.3.8",
+    "gulp": "^3.8.6",
+    "gulp-minify-css": "^0.3.7",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^0.7.2"
+  }
+}
