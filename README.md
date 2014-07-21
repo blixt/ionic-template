@@ -14,7 +14,7 @@ You'll need these things before you start:
 
 * Node.js: http://nodejs.org/
 * Ionic, Cordova, and Gulp: `npm install -g cordova gulp ionic`
-* [ImageMagick][im] (see section below for using Homebrew to install it)
+* The `convert` command (provided by [ImageMagick][im])
 
 ### How to run your first mobile app
 
@@ -62,12 +62,15 @@ hooks (under the `"ionic"` key).
 Please submit pull requests for any improvements to the template!
 
 
-Installing ImageMagick
-----------------------
+Making resizing work
+--------------------
 
-For resizing images the hooks use [ImageMagick][im]. You can follow the
-instructions on their home page, or if you're on Mac OS X, you can use
-[Homebrew][brew] which might be easier to use than Ports:
+For resizing images the hooks use [ImageMagick][im]. To see if it'll work
+for you, try running the `convert` command on your command line. If it
+doesn't work, you can find out how to install it on [their website][im].
+
+If you're on Mac OS X, you can use [Homebrew][brew] which might be easier
+to use than Ports:
 
 ```sh
 brew install imagemagick
